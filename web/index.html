@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+<title>Converter</title>
+<body>
+
+<h2>Length Converter</h2>
+
+<! -- Meters - Km  -->
+<p><b>Метры в километры и наоборот:</b> </p>
+
+<p>
+  <label>Метры: </label>
+  <input id="inputMeters1" type="number" placeholder="метры" oninput="MetersToKM(this.value)" onchange="MetersToKM(this.value)">
+</p>
+<p>Километры: <span id="outputKM"></span></p>
+
+<script>
+function MetersToKM(valNum1) {
+  document.getElementById("outputKM").innerHTML=valNum1/1000;
+}
+</script>
+
+<p>
+  <label>Километры: </label>
+  <input id="inputKM" type="number" placeholder="километры" oninput="KMToMeters(this.value)" onchange="KMToMeters(this.value)">
+</p>
+<p>Метры: <span id="outputMeters1"></span></p>
+
+<script>
+function KMToMeters(valNum1) {
+  document.getElementById("outputMeters1").innerHTML=valNum1*1000;
+}
+</script>
+
+<! -- Meters - Miles  -->
+<p><b><br>Метры в мили и наоборот: </b></p>
+
+<p>
+  <label>Метры: </label>
+  <input id="inputMeters2" type="number" placeholder="метры" oninput="MetersToMiles(this.value)" onchange="MetersToMiles(this.value)">
+</p>
+<p>Мили: <span id="outputMiles"></span></p>
+
+<script>
+function MetersToMiles(valNum1) {
+  document.getElementById("outputMiles").innerHTML=valNum1/1609;
+}
+</script>
+
+<p>
+  <label>Мили: </label>
+  <input id="inputMiles" type="number" placeholder="мили" oninput="MilesToMeters(this.value)" onchange="MilesToMeters(this.value)">
+</p>
+<p>Метры: <span id="outputMeters2"></span></p>
+
+<script>
+function MilesToMeters(valNum1) {
+  document.getElementById("outputMeters2").innerHTML=valNum1*1609;
+}
+</script>
+
+<! -- Meters - NauticalMile  -->
+<p><b><br>Метры в морские мили и наоборот: </b></p>
+
+<p>
+  <label>Метры: </label>
+  <input id="inputMeters3" type="number" placeholder="метры" oninput="MetersToNauticalMiles(this.value)" onchange="MetersToNauticalMiles(this.value)">
+</p>
+<p>Морские мили: <span id="outputNauticalMiles"></span></p>
+
+<script>
+function MetersToNauticalMiles(valNum1) {
+  document.getElementById("outputNauticalMiles").innerHTML=valNum1/1852;
+}
+</script>
+
+<p>
+  <label>Морские мили: </label>
+  <input id="inputNauticalMiles" type="number" placeholder="морские мили" oninput="NauticalMilesToMeters(this.value)" onchange="NauticalMilesToMeters(this.value)">
+</p>
+<p>Метры: <span id="outputMeters3"></span></p>
+
+<script>
+function NauticalMilesToMeters(valNum1) {
+  document.getElementById("outputMeters3").innerHTML=valNum1*1852;
+}
+</script>
+
+<! -- Meters - Cable  -->
+<p><b><br>Метры в кабельты и наоборот: </b></p>
+
+<p>
+  <label>Метры: </label>
+  <input id="inputMeters4" type="number" placeholder="метры" oninput="MetersToCable(this.value)" onchange="MetersToCable(this.value)">
+</p>
+<p>Кабельты: <span id="outputCable"></span></p>
+
+<script>
+function MetersToCable(valNum1) {
+  document.getElementById("outputCable").innerHTML=valNum1/185.2;
+}
+</script>
+
+<p>
+  <label>Кабельты: </label>
+  <input id="inputCable" type="number" placeholder="кабельты" oninput="CableToMeters(this.value)" onchange="CableToMeters(this.value)">
+</p>
+<p>Метры: <span id="outputMeters4"></span></p>
+
+<script>
+function CableToMeters(valNum1) {
+  document.getElementById("outputMeters4").innerHTML=valNum1*185.2;
+}
+</script>
+
+<! -- Meters - League  -->
+<p><b><br>Метры в морские лиги и наоборот: </b></p>
+
+<p>
+  <label>Метры: </label>
+  <input id="inputMeters5" type="number" placeholder="метры" oninput="MetersToLeague(this.value)" onchange="MetersToLeague(this.value)">
+</p>
+<p>Морские лиги: <span id="outputLeague"></span></p>
+
+<script>
+function MetersToLeague(valNum1) {
+  document.getElementById("outputLeague").innerHTML=valNum1/5556;
+}
+</script>
+
+<p>
+  <label>Морские лиги: </label>
+  <input id="inputCable" type="number" placeholder="морские лиги" oninput="LeagueToMeters(this.value)" onchange="LeagueToMeters(this.value)">
+</p>
+<p>Метры: <span id="outputMeters5"></span></p>
+
+<script>
+function LeagueToMeters(valNum1) {
+  document.getElementById("outputMeters5").innerHTML=valNum1*5556;
+}
+</script>
+
+<! -- Meters - Foot  -->
+<p><b><br>Метры в футы и наоборот: </b></p>
+
+<p>
+  <label>Метры: </label>
+  <input id="inputMeters6" type="number" placeholder="метры" oninput="MetersToFoot(this.value)" onchange="MetersToFoot(this.value)">
+</p>
+<p>Футы: <span id="outputFoot"></span></p>
+
+<script>
+function MetersToFoot(valNum1) {
+  document.getElementById("outputFoot").innerHTML=valNum1*3.281;
+}
+</script>
+
+<p>
+  <label>Футы: </label>
+  <input id="inputFoot" type="number" placeholder="футы" oninput="FootToMeters(this.value)" onchange="FootToMeters(this.value)">
+</p>
+<p>Метры: <span id="outputMeters6"></span></p>
+
+<script>
+function FootToMeters(valNum1) {
+  document.getElementById("outputMeters6").innerHTML=valNum1/3.281;
+}
+</script>
+<! -- Meters - Yard  -->
+<p><b><br>Метры в ярды и наоборот: </b></p>
+
+<p>
+  <label>Метры: </label>
+  <input id="inputMeters7" type="number" placeholder="метры" oninput="MetersToYard(this.value)" onchange="MetersToYard(this.value)">
+</p>
+<p>Ярды: <span id="outputYard"></span></p>
+
+<script>
+function MetersToYard(valNum1) {
+  document.getElementById("outputYard").innerHTML=valNum1*1.09361;
+}
+</script>
+
+<p>
+  <label>Ярды: </label>
+  <input id="inputYard" type="number" placeholder="ярды" oninput="YardToMeters(this.value)" onchange="YardToMeters(this.value)">
+</p>
+<p>Метры: <span id="outputMeters7"></span></p>
+
+<script>
+function YardToMeters(valNum1) {
+  document.getElementById("outputMeters7").innerHTML=valNum1/1.09361;
+}
+</script>
+
+<br>
+<h2>Temperature Converter</h2>
+<! -- C - Kelvin  -->
+<p><b><br>Градусы в Кельвины и наоборот: </b></p>
+
+<p>
+  <label>Градусы: </label>
+  <input id="inputC1" type="number" placeholder="градусы" oninput="CToKelvin(this.value)" onchange="CToKelvin(this.value)">
+</p>
+<p>Кельвины: <span id="outputKelvin"></span></p>
+
+<script>
+function CToKelvin(valNum1) {
+  document.getElementById("outputKelvin").innerHTML=(valNum1-(-273.15)).toFixed(5);
+}
+</script>
+
+<p>
+  <label>Кельвины: </label>
+  <input id="inputKelvin" type="number" placeholder="кельвины" oninput="KelvinToC(this.value)" onchange="KelvinToC(this.value)">
+</p>
+<p>Градусы: <span id="outputC1"></span></p>
+
+<script>
+function KelvinToC(valNum1) {
+  document.getElementById("outputC1").innerHTML=(valNum1-273.15).toFixed(5);
+}
+</script>
+
+<! -- C - Farenheit  -->
+<p><b><br>Градусы в Фаренгейты и наоборот: </b></p>
+
+<p>
+  <label>Градусы: </label>
+  <input id="inputC2" type="number" placeholder="градусы" oninput="CToFarenheit(this.value)" onchange="CToFarenheit(this.value)">
+</p>
+<p>Фаренгейты: <span id="outputFarenheit"></span></p>
+
+<script>
+function CToFarenheit(valNum1) {
+  document.getElementById("outputFarenheit").innerHTML=(valNum1*1.8-(-32)).toFixed(5);
+}
+</script>
+
+<p>
+  <label>Фаренгейты: </label>
+  <input id="inputFarenheit" type="number" placeholder="фаренгейты" oninput="FarenheitToC(this.value)" onchange="FarenheitToC(this.value)">
+</p>
+<p>Градусы: <span id="outputC2"></span></p>
+
+<script>
+function FarenheitToC(valNum1) {
+  document.getElementById("outputC2").innerHTML=((valNum1-32)/1.8).toFixed(5);
+}
+</script>
+
+<! -- C - Reomur  -->
+<p><b><br>Градусы в Реомюры и наоборот: </b></p>
+
+<p>
+  <label>Градусы: </label>
+  <input id="inputC3" type="number" placeholder="градусы" oninput="CToReomur(this.value)" onchange="CToReomur(this.value)">
+</p>
+<p>Реомюры: <span id="outputReomur"></span></p>
+
+<script>
+function CToReomur(valNum1) {
+  document.getElementById("outputReomur").innerHTML=(valNum1*0.8).toFixed(5);
+}
+</script>
+
+<p>
+  <label>Реомюры: </label>
+  <input id="inputReomur" type="number" placeholder="реомюры" oninput="ReomurToC(this.value)" onchange="ReomurToC(this.value)">
+</p>
+<p>Градусы: <span id="outputC3"></span></p>
+
+<script>
+function ReomurToC(valNum1) {
+  document.getElementById("outputC3").innerHTML=(valNum1/0.8).toFixed(5);
+}
+</script>
+
+<! -- C - Remer  -->
+<p><b><br>Градусы в Ремеры и наоборот: </b></p>
+
+<p>
+  <label>Градусы: </label>
+  <input id="inputC4" type="number" placeholder="градусы" oninput="CToRemer(this.value)" onchange="CToRemer(this.value)">
+</p>
+<p>Ремеры: <span id="outputRemer"></span></p>
+
+<script>
+function CToRemer(valNum1) {
+  document.getElementById("outputRemer").innerHTML=(valNum1*0.525-(-7.5)).toFixed(5);
+}
+</script>
+
+<p>
+  <label>Ремеры: </label>
+  <input id="inputRemer" type="number" placeholder="ремеры" oninput="RemerToC(this.value)" onchange="RemerToC(this.value)">
+</p>
+<p>Градусы: <span id="outputC4"></span></p>
+
+<script>
+function RemerToC(valNum1) {
+  document.getElementById("outputC4").innerHTML=((valNum1-7.5)/0.525).toFixed(5);
+}
+</script>
+
+<! -- C - Rankin  -->
+<p><b><br>Градусы в Ранкины и наоборот: </b></p>
+
+<p>
+  <label>Градусы: </label>
+  <input id="inputC5" type="number" placeholder="градусы" oninput="CToRankin(this.value)" onchange="CToRankin(this.value)">
+</p>
+<p>Ранкины: <span id="outputRankin"></span></p>
+
+<script>
+function CToRankin(valNum1) {
+  document.getElementById("outputRankin").innerHTML=(valNum1*1.8-(-491.47)).toFixed(5);
+}
+</script>
+
+<p>
+  <label>Ранкины: </label>
+  <input id="inputRankin" type="number" placeholder="ранкины" oninput="RankinToC(this.value)" onchange="RankinToC(this.value)">
+</p>
+<p>Градусы: <span id="outputC5"></span></p>
+
+<script>
+function RankinToC(valNum1) {
+  document.getElementById("outputC5").innerHTML=((valNum1-491.47)/1.8).toFixed(5);
+}
+</script>
+
+<! -- C - Newton  -->
+<p><b><br>Градусы в Ньютоны и наоборот: </b></p>
+
+<p>
+  <label>Градусы: </label>
+  <input id="inputC6" type="number" placeholder="градусы" oninput="CToNewton(this.value)" onchange="CToNewton(this.value)">
+</p>
+<p>Ньютоны: <span id="outputNewton"></span></p>
+
+<script>
+function CToNewton(valNum1) {
+  document.getElementById("outputNewton").innerHTML=(valNum1*0.33).toFixed(5);
+}
+</script>
+
+<p>
+  <label>Ньютоны: </label>
+  <input id="inputNewton" type="number" placeholder="ньютоны" oninput="NewtonToC(this.value)" onchange="NewtonToC(this.value)">
+</p>
+<p>Градусы: <span id="outputC6"></span></p>
+
+<script>
+function NewtonToC(valNum1) {
+  document.getElementById("outputC6").innerHTML=(valNum1/0.33).toFixed(5);
+}
+</script>
+
+<! -- C - Delil  -->
+<p><b><br>Градусы в Делили и наоборот: </b></p>
+
+<p>
+  <label>Градусы: </label>
+  <input id="inputC7" type="number" placeholder="градусы" oninput="CToDelil(this.value)" onchange="CToDelil(this.value)">
+</p>
+<p>Делиль: <span id="outputDelil"></span></p>
+
+<script>
+function CToDelil(valNum1) {
+  document.getElementById("outputDelil").innerHTML=(100-valNum1)*1.5.toFixed(5);
+}
+</script>
+
+<p>
+  <label>Делили: </label>
+  <input id="inputDelil" type="number" placeholder="делили" oninput="DelilToC(this.value)" onchange="DelilToC(this.value)">
+</p>
+<p>Градусы: <span id="outputC7"></span></p>
+
+<script>
+function DelilToC(valNum1) {
+  document.getElementById("outputC7").innerHTML=(-(valNum1/1.5-100)).toFixed(5);
+}
+</script>
+
+<br>
+<h2>Time Converter</h2>
+<! -- Sec - Min  -->
+<p><b><br>Секунды в Минуты и наоборот: </b></p>
+
+<p>
+  <label>Секунды: </label>
+  <input id="inputSec1" type="number" placeholder="секунды" oninput="SecToMin(this.value)" onchange="SecToMin(this.value)">
+</p>
+<p>Минуты: <span id="outputMin"></span></p>
+
+<script>
+function SecToMin(valNum1) {
+  document.getElementById("outputMin").innerHTML=(valNum1/60).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Минуты: </label>
+  <input id="inputMin" type="number" placeholder="минуты" oninput="MinToSec(this.value)" onchange="MinToSec(this.value)">
+</p>
+<p>Секунды: <span id="outputSec1"></span></p>
+
+<script>
+function MinToSec(valNum1) {
+  document.getElementById("outputSec1").innerHTML=(valNum1*60).toFixed(9);
+}
+</script>
+
+<! -- Sec - Hour  -->
+<p><b><br>Секунды в Часы и наоборот: </b></p>
+
+<p>
+  <label>Секунды: </label>
+  <input id="inputSec2" type="number" placeholder="секунды" oninput="SecToHour(this.value)" onchange="SecToHour(this.value)">
+</p>
+<p>Часы: <span id="outputHour"></span></p>
+
+<script>
+function SecToHour(valNum1) {
+  document.getElementById("outputHour").innerHTML=(valNum1/3600).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Часы: </label>
+  <input id="inputHour" type="number" placeholder="часы" oninput="HourToSec(this.value)" onchange="HourToSec(this.value)">
+</p>
+<p>Секунды: <span id="outputSec2"></span></p>
+
+<script>
+function HourToSec(valNum1) {
+  document.getElementById("outputSec2").innerHTML=(valNum1*3600).toFixed(9);
+}
+</script>
+
+<! -- Sec - Day  -->
+<p><b><br>Секунды в Дни и наоборот: </b></p>
+
+<p>
+  <label>Секунды: </label>
+  <input id="inputSec3" type="number" placeholder="секунды" oninput="SecToDay(this.value)" onchange="SecToDay(this.value)">
+</p>
+<p>Дни: <span id="outputDay"></span></p>
+
+<script>
+function SecToDay(valNum1) {
+  document.getElementById("outputDay").innerHTML=(valNum1/3600/24).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Дни: </label>
+  <input id="inputDay" type="number" placeholder="дни" oninput="DayToSec(this.value)" onchange="DayToSec(this.value)">
+</p>
+<p>Секунды: <span id="outputSec3"></span></p>
+
+<script>
+function DayToSec(valNum1) {
+  document.getElementById("outputSec3").innerHTML=(valNum1*3600*24).toFixed(9);
+}
+</script>
+
+<! -- Sec - Week  -->
+<p><b><br>Секунды в Недели и наоборот: </b></p>
+
+<p>
+  <label>Секунды: </label>
+  <input id="inputSec4" type="number" placeholder="секунды" oninput="SecToWeek(this.value)" onchange="SecToWeek(this.value)">
+</p>
+<p>Недели: <span id="outputWeek"></span></p>
+
+<script>
+function SecToWeek(valNum1) {
+  document.getElementById("outputWeek").innerHTML=(valNum1/3600/24/7).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Недели: </label>
+  <input id="inputWeek" type="number" placeholder="недели" oninput="WeekToSec(this.value)" onchange="WeekToSec(this.value)">
+</p>
+<p>Секунды: <span id="outputSec4"></span></p>
+
+<script>
+function WeekToSec(valNum1) {
+  document.getElementById("outputSec4").innerHTML=(valNum1*3600*24*7).toFixed(9);
+}
+</script>
+
+<! -- Sec - Month  -->
+<p><b><br>Секунды в Месяцы и наоборот: </b></p>
+
+<p>
+  <label>Секунды: </label>
+  <input id="inputSec5" type="number" placeholder="секунды" oninput="SecToMonth(this.value)" onchange="SecToMonth(this.value)">
+</p>
+<p>Месяцы: <span id="outputMonth"></span></p>
+
+<script>
+function SecToMonth(valNum1) {
+  document.getElementById("outputMonth").innerHTML=(valNum1/3600/24/30.4167).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Месяцы: </label>
+  <input id="inputMonth" type="number" placeholder="месяцы" oninput="MonthToSec(this.value)" onchange="MonthToSec(this.value)">
+</p>
+<p>Секунды: <span id="outputSec5"></span></p>
+
+<script>
+function MonthToSec(valNum1) {
+  document.getElementById("outputSec5").innerHTML=(valNum1*3600*24*30.4167).toFixed(9);
+}
+</script>
+
+<! -- Sec - Year  -->
+<p><b><br>Секунды в Годы и наоборот: </b></p>
+
+<p>
+  <label>Секунды: </label>
+  <input id="inputSec6" type="number" placeholder="секунды" oninput="SecToYear(this.value)" onchange="SecToYear(this.value)">
+</p>
+<p>Годы: <span id="outputYear"></span></p>
+
+<script>
+function SecToYear(valNum1) {
+  document.getElementById("outputYear").innerHTML=(valNum1/3600/24/365).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Годы: </label>
+  <input id="inputYear" type="number" placeholder="годы" oninput="YearToSec(this.value)" onchange="YearToSec(this.value)">
+</p>
+<p>Секунды: <span id="outputSec6"></span></p>
+
+<script>
+function YearToSec(valNum1) {
+  document.getElementById("outputSec6").innerHTML=(valNum1*3600*24*365).toFixed(9);
+}
+</script>
+
+<! -- L - CubicMetre  -->
+<br>
+<h2>Volume Converter</h2>
+<p><b><br>Литры в Кубические метры и наоборот: </b></p>
+
+<p>
+  <label>Литры: </label>
+  <input id="inputL1" type="number" placeholder="литры" oninput="LToCubicMetre(this.value)" onchange="LToCubicMetre(this.value)">
+</p>
+<p>Кубические метры: <span id="outputCubicMetre"></span></p>
+
+<script>
+function LToCubicMetre(valNum1) {
+  document.getElementById("outputCubicMetre").innerHTML=(valNum1/1000).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Кубические метры: </label>
+  <input id="inputCubicMetre" type="number" placeholder="кубические метры" oninput="CubicMetreToL(this.value)" onchange="CubicMetreToL(this.value)">
+</p>
+<p>Литры: <span id="outputL1"></span></p>
+
+<script>
+function CubicMetreToL(valNum1) {
+  document.getElementById("outputL1").innerHTML=(valNum1*1000).toFixed(9);
+}
+</script>
+
+<! -- L - Gallon  -->
+
+<p><b><br>Литры в Галлоны и наоборот: </b></p>
+
+<p>
+  <label>Литры: </label>
+  <input id="inputL2" type="number" placeholder="литры" oninput="LToGallon(this.value)" onchange="LToGallon(this.value)">
+</p>
+<p>Галлоны: <span id="outputGallon"></span></p>
+
+<script>
+function LToGallon(valNum1) {
+  document.getElementById("outputGallon").innerHTML=(valNum1/3.785).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Галлоны: </label>
+  <input id="inputGallon" type="number" placeholder="галлоны" oninput="GallonToL(this.value)" onchange="GallonToL(this.value)">
+</p>
+<p>Литры: <span id="outputL2"></span></p>
+
+<script>
+function GallonToL(valNum1) {
+  document.getElementById("outputL2").innerHTML=(valNum1*3.785).toFixed(9);
+}
+</script>
+
+<! -- L - Pint  -->
+<p><b><br>Литры в Пинты и наоборот: </b></p>
+
+<p>
+  <label>Литры: </label>
+  <input id="inputL3" type="number" placeholder="литры" oninput="LToPint(this.value)" onchange="LToPint(this.value)">
+</p>
+<p>Пинты: <span id="outputPint"></span></p>
+
+<script>
+function LToPint(valNum1) {
+  document.getElementById("outputPint").innerHTML=(valNum1*2.11338).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Пинты: </label>
+  <input id="inputPint" type="number" placeholder="пинты" oninput="PintToL(this.value)" onchange="PintToL(this.value)">
+</p>
+<p>Литры: <span id="outputL3"></span></p>
+
+<script>
+function PintToL(valNum1) {
+  document.getElementById("outputL3").innerHTML=(valNum1/2.11338).toFixed(9);
+}
+</script>
+
+<! -- L - Quart  -->
+<p><b><br>Литры в кварты и наоборот: </b></p>
+
+<p>
+  <label>Литры: </label>
+  <input id="inputL4" type="number" placeholder="литры" oninput="LToQuart(this.value)" onchange="LToQuart(this.value)">
+</p>
+<p>Кварты: <span id="outputQuart"></span></p>
+
+<script>
+function LToQuart(valNum1) {
+  document.getElementById("outputQuart").innerHTML=(valNum1*1.05669).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Кварты: </label>
+  <input id="inputQuart" type="number" placeholder="кварты" oninput="QuartToL(this.value)" onchange="QuartToL(this.value)">
+</p>
+<p>Литры: <span id="outputL4"></span></p>
+
+<script>
+function QuartToL(valNum1) {
+  document.getElementById("outputL4").innerHTML=(valNum1/1.05669).toFixed(9);
+}
+</script>
+
+<! -- L - Barrel  -->
+<p><b><br>Литры в Баррели и наоборот: </b></p>
+
+<p>
+  <label>Литры: </label>
+  <input id="inputL5" type="number" placeholder="литры" oninput="LToBarrel(this.value)" onchange="LToBarrel(this.value)">
+</p>
+<p>Баррели: <span id="outputBarrel"></span></p>
+
+<script>
+function LToBarrel(valNum1) {
+  document.getElementById("outputBarrel").innerHTML=(valNum1/159).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Баррели: </label>
+  <input id="inputBarrel" type="number" placeholder="баррели" oninput="BarrelToL(this.value)" onchange="BarrelToL(this.value)">
+</p>
+<p>Литры: <span id="outputL5"></span></p>
+
+<script>
+function BarrelToL(valNum1) {
+  document.getElementById("outputL5").innerHTML=(valNum1*159).toFixed(9);
+}
+</script>
+
+<! -- L - CubicFoot  -->
+<p><b><br>Литры в Кубические футы и наоборот: </b></p>
+
+<p>
+  <label>Литры: </label>
+  <input id="inputL6" type="number" placeholder="литры" oninput="LToCubicFoot(this.value)" onchange="LToCubicFoot(this.value)">
+</p>
+<p>Кубические футы: <span id="outputCubicFoot"></span></p>
+
+<script>
+function LToCubicFoot(valNum1) {
+  document.getElementById("outputCubicFoot").innerHTML=(valNum1/28.317).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Кубические футы: </label>
+  <input id="inputCubicFoot" type="number" placeholder="кубические футы" oninput="CubicFootToL(this.value)" onchange="CubicFootToL(this.value)">
+</p>
+<p>Литры: <span id="outputL6"></span></p>
+
+<script>
+function CubicFootToL(valNum1) {
+  document.getElementById("outputL6").innerHTML=(valNum1*28.317).toFixed(9);
+}
+</script>
+
+<! -- L - CubicInch  -->
+<p><b><br>Литры в Кубические инчи и наоборот: </b></p>
+
+<p>
+  <label>Литры: </label>
+  <input id="inputL7" type="number" placeholder="литры" oninput="LToCubicInch(this.value)" onchange="LToCubicInch(this.value)">
+</p>
+<p>Кубические инчи: <span id="outputCubicInch"></span></p>
+
+<script>
+function LToCubicInch(valNum1) {
+  document.getElementById("outputCubicInch").innerHTML=(valNum1*61.024).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Кубические инчи: </label>
+  <input id="inputCubicInch" type="number" placeholder="кубические инчи" oninput="CubicInchToL(this.value)" onchange="CubicInchToL(this.value)">
+</p>
+<p>Литры: <span id="outputL7"></span></p>
+
+<script>
+function CubicInchToL(valNum1) {
+  document.getElementById("outputL7").innerHTML=(valNum1/61.024).toFixed(9);
+}
+</script>
+
+<! -- L - CubicInch  -->
+<br>
+<h2>Weight Converter</h2>
+<p><b><br>Килограмы в грамы и наоборот: </b></p>
+
+<p>
+  <label>Килограмы: </label>
+  <input id="inputKg1" type="number" placeholder="килограмы" oninput="KgToGram(this.value)" onchange="KgToGram(this.value)">
+</p>
+<p>Грамы: <span id="outputGram"></span></p>
+
+<script>
+function KgToGram(valNum1) {
+  document.getElementById("outputGram").innerHTML=(valNum1*1000).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Грамы: </label>
+  <input id="inputGram" type="number" placeholder="грамы" oninput="GramToKg(this.value)" onchange="GramToKg(this.value)">
+</p>
+<p>Килограмы: <span id="outputKg1"></span></p>
+
+<script>
+function GramToKg(valNum1) {
+  document.getElementById("outputKg1").innerHTML=(valNum1/1000).toFixed(9);
+}
+</script>
+
+<p><b><br>Килограмы в караты и наоборот: </b></p>
+
+<p>
+  <label>Килограмы: </label>
+  <input id="inputKg2" type="number" placeholder="килограмы" oninput="KgToCarat(this.value)" onchange="KgToCarat(this.value)">
+</p>
+<p>Караты: <span id="outputCarat"></span></p>
+
+<script>
+function KgToCarat(valNum1) {
+  document.getElementById("outputCarat").innerHTML=(valNum1*5000).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Караты: </label>
+  <input id="inputCarat" type="number" placeholder="караты" oninput="CaratToKg(this.value)" onchange="CaratToKg(this.value)">
+</p>
+<p>Килограмы: <span id="outputKg2"></span></p>
+
+<script>
+function CaratToKg(valNum1) {
+  document.getElementById("outputKg2").innerHTML=(valNum1/5000).toFixed(9);
+}
+</script>
+
+<p><b><br>Килограмы в Английские фунты и наоборот: </b></p>
+
+<p>
+  <label>Килограмы: </label>
+  <input id="inputKg3" type="number" placeholder="килограмы" oninput="KgToEngPound(this.value)" onchange="KgToEngPound(this.value)">
+</p>
+<p>Английские фунты: <span id="outputEngPound"></span></p>
+
+<script>
+function KgToEngPound(valNum1) {
+  document.getElementById("outputEngPound").innerHTML=(valNum1/2.20462).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Английские фунты: </label>
+  <input id="inputEngPound" type="number" placeholder="английские фунты" oninput="EngPoundToKg(this.value)" onchange="EngPoundToKg(this.value)">
+</p>
+<p>Килограмы: <span id="outputKg3"></span></p>
+
+<script>
+function EngPoundToKg(valNum1) {
+  document.getElementById("outputKg3").innerHTML=(valNum1*2.20462).toFixed(9);
+}
+</script>
+
+<p><b><br>Килограмы в фунты и наоборот: </b></p>
+
+<p>
+  <label>Килограмы: </label>
+  <input id="inputKg4" type="number" placeholder="килограмы" oninput="KgToPound(this.value)" onchange="KgToPound(this.value)">
+</p>
+<p>Фунты: <span id="outputPound"></span></p>
+
+<script>
+function KgToPound(valNum1) {
+  document.getElementById("outputPound").innerHTML=(valNum1*2.20462).toFixed(9);
+}
+</script>
+
+<p>
+  <label>Фунты: </label>
+  <input id="inputPound" type="number" placeholder="фунты" oninput="PoundToKg(this.value)" onchange="PoundToKg(this.value)">
+</p>
+<p>Килограмы: <span id="outputKg4"></span></p>
+
+<script>
+function PoundToKg(valNum1) {
+  document.getElementById("outputKg4").innerHTML=(valNum1/2.20462).toFixed(9);
+}
+</script>
+
+<p><b><br>Килограмы в RusFunt и наоборот: </b></p>
+
+<p>
+  <label>Килограмы: </label>
+  <input id="inputKg6" type="number" placeholder="килограмы" oninput="KgToRusFunt(this.value)" onchange="KgToRusFunt(this.value)">
+</p>
+<p>RusFunt: <span id="outputRusFunt"></span></p>
+
+<script>
+function KgToRusFunt(valNum1) {
+  document.getElementById("outputRusFunt").innerHTML=(valNum1*2.4419).toFixed(9);
+}
+</script>
+
+<p>
+  <label>RusFunt: </label>
+  <input id="inputRusFunt" type="number" placeholder="RusFunt" oninput="RusFuntToKg(this.value)" onchange="RusFuntToKg(this.value)">
+</p>
+<p>Килограмы: <span id="outputKg6"></span></p>
+
+<script>
+function RusFuntToKg(valNum1) {
+  document.getElementById("outputKg6").innerHTML=(valNum1/2.4419).toFixed(9);
+}
+</script>
+</body>
+</html>
